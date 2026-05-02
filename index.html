@@ -3,17 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikash Tiwari | Developer & Consultant</title>
+<title>Vikash Tiwari | Software Architect</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
   font-family:'Poppins',sans-serif;
-  background:linear-gradient(135deg,#0f172a,#020617);
+  background:#0a0f1c;
   color:#fff;
+  overflow-x:hidden;
+}
+
+/* floating background glow */
+.bg-glow{
+  position:fixed;
+  width:400px;
+  height:400px;
+  background:#22c55e;
+  filter:blur(150px);
+  opacity:0.2;
+  top:-100px;
+  left:-100px;
+  animation:move 8s infinite alternate;
+}
+
+@keyframes move{
+  0%{transform:translate(0,0);}
+  100%{transform:translate(200px,150px);}
 }
 
 .container{
@@ -25,12 +44,31 @@ body{
 /* HERO */
 .hero{
   text-align:center;
-  padding:100px 20px;
+  padding:120px 20px 80px;
+  animation:fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+.hero img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #22c55e;
+  margin-bottom:20px;
+  transition:0.3s;
+}
+
+.hero img:hover{
+  transform:scale(1.05);
 }
 
 .hero h1{
-  font-size:50px;
-  font-weight:600;
+  font-size:48px;
 }
 
 .hero p{
@@ -40,14 +78,14 @@ body{
 }
 
 .badge{
-  margin-top:15px;
   display:inline-block;
+  margin-top:15px;
   padding:6px 12px;
   background:#22c55e;
   color:#000;
   border-radius:20px;
-  font-size:14px;
   font-weight:600;
+  font-size:13px;
 }
 
 .btn{
@@ -56,14 +94,26 @@ body{
   padding:14px 30px;
   background:#22c55e;
   color:#000;
-  border-radius:8px;
+  border-radius:10px;
   text-decoration:none;
   font-weight:600;
+  transition:0.3s;
 }
 
-/* SECTIONS */
+.btn:hover{
+  transform:scale(1.05);
+  background:#16a34a;
+}
+
+/* SECTION */
 .section{
   margin-top:80px;
+  animation:fadeUp 1s ease-in;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(40px);}
+  to{opacity:1;transform:translateY(0);}
 }
 
 h2{
@@ -81,14 +131,17 @@ h2{
 }
 
 .card{
-  background:#1e293b;
+  background:rgba(255,255,255,0.05);
   padding:20px;
-  border-radius:10px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.08);
   transition:0.3s;
+  backdrop-filter: blur(10px);
 }
 
 .card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-8px);
+  border-color:#22c55e;
 }
 
 /* SKILLS */
@@ -96,8 +149,28 @@ h2{
   display:inline-block;
   margin:5px;
   padding:8px 14px;
-  background:#1e293b;
+  background:rgba(255,255,255,0.05);
   border-radius:20px;
+}
+
+/* CTA */
+.cta{
+  text-align:center;
+  margin-top:80px;
+  padding:40px;
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  color:#000;
+  border-radius:15px;
+}
+
+.cta a{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 25px;
+  background:#000;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
 }
 
 /* FOOTER */
@@ -112,13 +185,17 @@ h2{
 
 <body>
 
+<div class="bg-glow"></div>
+
 <div class="container">
 
 <!-- HERO -->
 <div class="hero">
+  <img src="your-photo.jpg" alt="Vikash Tiwari">
+
   <h1>Vikash Tiwari</h1>
 
-  <p>Full Stack PHP Developer | ERP & CRM Specialist | Business Consultant | Trainer</p>
+  <p>Software Architect | PHP Expert | ERP & CRM Specialist | Consultant</p>
 
   <div class="badge">10+ Years Experience</div>
 
@@ -131,134 +208,83 @@ h2{
 <div class="section">
   <h2>About Me</h2>
   <p>
-    I am a senior software developer with 10+ years of experience in building scalable ERP systems,
-    CRM platforms, ecommerce solutions, and custom business applications.
-
-    I also provide consulting for business automation, system architecture, and software training
-    for developers and startups.
+    I design and build scalable enterprise systems including ERP, CRM, ecommerce platforms and custom business solutions.
+    My focus is on performance, automation, and real business impact rather than just coding.
   </p>
 </div>
 
 <!-- SERVICES -->
 <div class="section">
-  <h2>Development Services</h2>
-  <div class="grid">
+<h2>What I Do</h2>
+<div class="grid">
 
-    <div class="card">✔ ERP Development (Full Business Automation)</div>
-    <div class="card">✔ CRM Systems (Sales & Customer Management)</div>
-    <div class="card">✔ Ecommerce Platforms</div>
-    <div class="card">✔ Custom Web Applications</div>
-    <div class="card">✔ API & Backend Systems</div>
-    <div class="card">✔ Android App Integration</div>
+<div class="card">✔ ERP Development (Full Automation Systems)</div>
+<div class="card">✔ CRM Platforms (Sales & Leads Management)</div>
+<div class="card">✔ Ecommerce Systems</div>
+<div class="card">✔ API & Backend Architecture</div>
+<div class="card">✔ Custom Software Solutions</div>
+<div class="card">✔ Business System Consulting</div>
 
-  </div>
 </div>
-
-<!-- CONSULTING -->
-<div class="section">
-  <h2>Business Consulting</h2>
-  <div class="grid">
-
-    <div class="card">
-      <strong>ERP & CRM Strategy</strong>
-      <p>Helping businesses design automation systems for growth.</p>
-    </div>
-
-    <div class="card">
-      <strong>System Architecture</strong>
-      <p>Scalable software design for startups and enterprises.</p>
-    </div>
-
-    <div class="card">
-      <strong>GST Billing System Setup</strong>
-      <p>Custom billing software structure for businesses.</p>
-    </div>
-
-  </div>
-</div>
-
-<!-- TRAINING -->
-<div class="section">
-  <h2>Training & Mentorship</h2>
-  <div class="grid">
-
-    <div class="card">
-      <strong>PHP & CodeIgniter</strong>
-      <p>Real-world project based training, not theory.</p>
-    </div>
-
-    <div class="card">
-      <strong>MySQL & Database Design</strong>
-      <p>Advanced database structure & optimization.</p>
-    </div>
-
-    <div class="card">
-      <strong>Project Architecture</strong>
-      <p>How to build scalable ERP & CRM systems.</p>
-    </div>
-
-  </div>
 </div>
 
 <!-- SKILLS -->
 <div class="section">
-  <h2>Tech Stack</h2>
-  <div class="skills">
-    <span>PHP</span>
-    <span>CodeIgniter</span>
-    <span>MySQL</span>
-    <span>JavaScript</span>
-    <span>jQuery</span>
-    <span>HTML5</span>
-    <span>CSS3</span>
-    <span>Bootstrap</span>
-    <span>Android</span>
-  </div>
+<h2>Tech Stack</h2>
+<div class="skills">
+<span>PHP</span>
+<span>CodeIgniter</span>
+<span>MySQL</span>
+<span>JavaScript</span>
+<span>Bootstrap</span>
+<span>HTML5</span>
+<span>CSS3</span>
+<span>Android</span>
+</div>
 </div>
 
 <!-- PROJECTS -->
 <div class="section">
-  <h2>Projects</h2>
-  <div class="grid">
+<h2>Projects</h2>
+<div class="grid">
 
-    <div class="card">
-      <strong>ERP System</strong>
-      <p>Inventory, HR, billing & reporting automation system.</p>
-    </div>
+<div class="card">
+<strong>ERP System</strong>
+<p>Complete business automation system for inventory, HR, billing & reporting.</p>
+</div>
 
-    <div class="card">
-      <strong>Ecommerce Platform</strong>
-      <p>Payment gateway, admin panel & product management system.</p>
-    </div>
+<div class="card">
+<strong>Ecommerce Platform</strong>
+<p>Scalable online store with payment integration & admin control.</p>
+</div>
 
-    <div class="card">
-      <strong>CRM Software</strong>
-      <p>Lead tracking, sales pipeline & customer management.</p>
-    </div>
+<div class="card">
+<strong>CRM Software</strong>
+<p>Lead tracking, sales pipeline & customer management system.</p>
+</div>
 
-  </div>
+</div>
 </div>
 
 <!-- CTA -->
-<div class="section" style="text-align:center;">
-  <h2>Let’s Work Together</h2>
-  <p>Available for freelance projects, consulting & training</p>
-  <a class="btn" href="https://wa.me/917550690731">Start Conversation</a>
+<div class="cta">
+  <h2>Let’s Build Something Powerful</h2>
+  <p>Available for Freelance, Consulting & Training</p>
+  <a href="https://wa.me/917550690731">Start Conversation</a>
 </div>
 
 <!-- CONTACT -->
 <div class="section">
-  <h2>Contact</h2>
-  <p>
-    📞 +91 7550690731 <br>
-    📧 vikashtiwari060@gmail.com <br>
-    🔗 LinkedIn: linkedin.com/in/vikash-tiwari-a2554296 <br>
-    💻 GitHub: github.com/vikashtiwari
-  </p>
+<h2>Contact</h2>
+<p>
+📞 +91 7550690731 <br>
+📧 vikashtiwari060@gmail.com <br>
+🔗 LinkedIn Profile Available
+</p>
 </div>
 
 <div class="footer">
-  © 2026 Vikash Tiwari | Developer • Consultant • Trainer
+© 2026 Vikash Tiwari | Built with modern web architecture mindset
 </div>
 
 </div>
