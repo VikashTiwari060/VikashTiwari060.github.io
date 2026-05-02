@@ -8,74 +8,105 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background: #0f172a;
-  color: #fff;
+  background: linear-gradient(135deg,#0f172a,#020617);
+  color:#fff;
+  line-height:1.6;
 }
 
 .container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
 }
 
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 80px 20px;
+  text-align:center;
+  padding:100px 20px;
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size:48px;
 }
 
 .hero p {
-  font-size: 18px;
-  color: #cbd5f5;
+  margin-top:10px;
+  font-size:18px;
+  color:#cbd5f5;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #22c55e;
-  color: #000;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 30px;
+  background:#22c55e;
+  color:#000;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
 }
 
+.btn:hover {
+  background:#16a34a;
+}
+
+/* SECTION */
 .section {
-  margin-top: 60px;
+  margin-top:80px;
 }
 
 h2 {
-  border-left: 4px solid #22c55e;
-  padding-left: 10px;
+  font-size:26px;
+  margin-bottom:20px;
+  border-left:4px solid #22c55e;
+  padding-left:10px;
 }
 
+/* CARDS */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#1e293b;
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+}
+
+/* SKILLS */
 .skills span {
-  display: inline-block;
-  background: #1e293b;
-  margin: 5px;
-  padding: 8px 15px;
-  border-radius: 20px;
+  display:inline-block;
+  margin:6px;
+  padding:8px 14px;
+  background:#1e293b;
+  border-radius:20px;
 }
 
-.project {
-  background: #1e293b;
-  padding: 20px;
-  margin-top: 15px;
-  border-radius: 8px;
+/* CONTACT */
+.contact a {
+  color:#22c55e;
+  text-decoration:none;
 }
 
+/* FOOTER */
 .footer {
-  text-align: center;
-  margin-top: 60px;
-  padding: 20px;
-  color: #94a3b8;
+  text-align:center;
+  margin-top:80px;
+  padding:20px;
+  color:#94a3b8;
+  font-size:14px;
 }
 </style>
 </head>
@@ -84,37 +115,41 @@ h2 {
 
 <div class="container">
 
+<!-- HERO -->
 <div class="hero">
   <h1>Vikash Tiwari</h1>
-  <p>10+ Years Experienced PHP Developer | ERP | CRM | Ecommerce Specialist</p>
-  
-  <a class="btn" href="https://wa.me/917550690731">Hire Me / Chat on WhatsApp</a>
+  <p>I build scalable ERP, CRM & Ecommerce systems for growing businesses</p>
+  <p><strong>10+ Years Experience | PHP | CodeIgniter | Custom Software</strong></p>
+
+  <a class="btn" href="https://wa.me/917550690731">Hire Me / WhatsApp</a>
 </div>
 
+<!-- ABOUT -->
 <div class="section">
   <h2>About Me</h2>
   <p>
-    I help businesses build scalable web applications, ERP systems, CRM platforms, and ecommerce solutions. 
-    With over 10 years of hands-on experience, I specialize in delivering high-performance, secure, and customized software solutions tailored to business needs.
+    I am a senior PHP developer with over 10 years of experience building custom web applications,
+    ERP systems, CRM platforms, and ecommerce solutions.
+    
+    I focus on solving real business problems like automation, performance, and scalability —
+    not just building websites.
   </p>
 </div>
 
+<!-- SERVICES -->
 <div class="section">
-  <h2>What I Do</h2>
-  <div class="project">
-    ✔ Custom ERP Development (Inventory, HR, Billing, Reports)
-  </div>
-  <div class="project">
-    ✔ CRM Systems (Lead management, automation, dashboards)
-  </div>
-  <div class="project">
-    ✔ Ecommerce Platforms (Payment gateway, order system, admin panel)
-  </div>
-  <div class="project">
-    ✔ Custom Software & API Integration
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">✔ Custom ERP Development</div>
+    <div class="card">✔ CRM Systems & Automation</div>
+    <div class="card">✔ Ecommerce Development</div>
+    <div class="card">✔ API Integration</div>
+    <div class="card">✔ Custom Software Solutions</div>
+    <div class="card">✔ Backend System Architecture</div>
   </div>
 </div>
 
+<!-- SKILLS -->
 <div class="section">
   <h2>Tech Stack</h2>
   <div class="skills">
@@ -126,41 +161,52 @@ h2 {
     <span>HTML5</span>
     <span>CSS3</span>
     <span>Bootstrap</span>
-    <span>Android Apps</span>
+    <span>Android</span>
   </div>
 </div>
 
+<!-- PROJECTS -->
 <div class="section">
   <h2>Projects</h2>
+  <div class="grid">
 
-  <div class="project">
-    <strong>Ecommerce Platform</strong><br>
-    Built a scalable ecommerce system with payment gateway, product management, and admin dashboard.
+    <div class="card">
+      <strong>ERP System</strong>
+      <p>Inventory, HR, billing & reporting system for business automation.</p>
+    </div>
+
+    <div class="card">
+      <strong>Ecommerce Platform</strong>
+      <p>Complete ecommerce solution with payment integration & admin panel.</p>
+    </div>
+
+    <div class="card">
+      <strong>CRM Software</strong>
+      <p>Lead management, sales pipeline & customer tracking system.</p>
+    </div>
+
   </div>
-
-  <div class="project">
-    <strong>Custom ERP System</strong><br>
-    Developed ERP with modules like inventory, employee management, billing, and reporting.
-  </div>
-
-  <div class="project">
-    <strong>CRM Software</strong><br>
-    Created CRM system for managing leads, sales pipeline, and customer communication.
-  </div>
-
 </div>
 
-<div class="section">
+<!-- CTA -->
+<div class="section" style="text-align:center;">
+  <h2>Let's Work Together</h2>
+  <p>Available for freelance & contract work</p>
+  <a class="btn" href="https://wa.me/917550690731">Start a Conversation</a>
+</div>
+
+<!-- CONTACT -->
+<div class="section contact">
   <h2>Contact</h2>
   <p>
     📞 Phone: +91 7550690731 <br>
     📧 Email: vikashtiwari060@gmail.com <br>
-    🔗 LinkedIn: https://www.linkedin.com/in/vikash-tiwari-a2554296 <br>
+    🔗 LinkedIn: <a href="https://www.linkedin.com/in/vikash-tiwari-a2554296" target="_blank">View Profile</a>
   </p>
 </div>
 
 <div class="footer">
-  © 2026 Vikash Tiwari | All Rights Reserved
+  © 2026 Vikash Tiwari | Built with passion
 </div>
 
 </div>
