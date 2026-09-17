@@ -3,291 +3,650 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikash Tiwari | Software Architect</title>
+<title>Vikash Tiwari | PHP Developer &amp; ERP Software Specialist</title>
+<meta name="description" content="PHP developer with 10+ years of experience building and customizing ERP systems, business software, websites, APIs and payment integrations. Available for direct projects and agency partnerships.">
+<link rel="canonical" href="https://vikashtiwari060.github.io/">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vikash Tiwari | PHP Developer & ERP Software Specialist">
+<meta property="og:description" content="PHP developer with 10+ years of experience building and customizing ERP systems, business software, websites, APIs and payment integrations.">
+<meta property="og:image" content="https://vikashtiwari060.github.io/assets/img/vikash-tiwari.png">
+<meta property="og:url" content="https://vikashtiwari060.github.io/">
+<meta name="twitter:card" content="summary">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
+<link rel="icon" href="data:,">
 
-body{
-  font-family:'Poppins',sans-serif;
-  background:#0a0f1c;
-  color:#fff;
-  overflow-x:hidden;
-}
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-/* floating background glow */
-.bg-glow{
-  position:fixed;
-  width:400px;
-  height:400px;
-  background:#22c55e;
-  filter:blur(150px);
-  opacity:0.2;
-  top:-100px;
-  left:-100px;
-  animation:move 8s infinite alternate;
-}
+<!-- Bootstrap 5 (grid + reset utilities; visual design is custom, see styles.css) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome (icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-@keyframes move{
-  0%{transform:translate(0,0);}
-  100%{transform:translate(200px,150px);}
-}
-
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
-
-/* HERO */
-.hero{
-  text-align:center;
-  padding:120px 20px 80px;
-  animation:fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
-.hero img{
-  width:140px;
-  height:140px;
-  border-radius:50%;
-  object-fit:cover;
-  border:4px solid #22c55e;
-  margin-bottom:20px;
-  transition:0.3s;
-}
-
-.hero img:hover{
-  transform:scale(1.05);
-}
-
-.hero h1{
-  font-size:48px;
-}
-
-.hero p{
-  margin-top:10px;
-  color:#cbd5f5;
-  font-size:18px;
-}
-
-.badge{
-  display:inline-block;
-  margin-top:15px;
-  padding:6px 12px;
-  background:#22c55e;
-  color:#000;
-  border-radius:20px;
-  font-weight:600;
-  font-size:13px;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:14px 30px;
-  background:#22c55e;
-  color:#000;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.btn:hover{
-  transform:scale(1.05);
-  background:#16a34a;
-}
-
-/* SECTION */
-.section{
-  margin-top:80px;
-  animation:fadeUp 1s ease-in;
-}
-
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(40px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
-h2{
-  font-size:26px;
-  margin-bottom:20px;
-  border-left:4px solid #22c55e;
-  padding-left:10px;
-}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:rgba(255,255,255,0.05);
-  padding:20px;
-  border-radius:12px;
-  border:1px solid rgba(255,255,255,0.08);
-  transition:0.3s;
-  backdrop-filter: blur(10px);
-}
-
-.card:hover{
-  transform:translateY(-8px);
-  border-color:#22c55e;
-}
-
-/* SKILLS */
-.skills span{
-  display:inline-block;
-  margin:5px;
-  padding:8px 14px;
-  background:rgba(255,255,255,0.05);
-  border-radius:20px;
-}
-
-/* CTA */
-.cta{
-  text-align:center;
-  margin-top:80px;
-  padding:40px;
-  background:linear-gradient(135deg,#22c55e,#16a34a);
-  color:#000;
-  border-radius:15px;
-}
-
-.cta a{
-  display:inline-block;
-  margin-top:15px;
-  padding:12px 25px;
-  background:#000;
-  color:#fff;
-  border-radius:8px;
-  text-decoration:none;
-}
-
-/* FOOTER */
-.footer{
-  text-align:center;
-  margin-top:80px;
-  padding:20px;
-  color:#94a3b8;
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div class="bg-glow"></div>
+<!-- =========================================================
+     1. NAVIGATION
+     ========================================================= -->
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a href="#" class="nav-logo">Vikash <span>Tiwari</span></a>
 
-<div class="container">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#partnership">Agencies</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="de512b1a-9e59-4e16-9838-fd3cc8240965.png" alt="Vikash Tiwari">
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-outline btn-sm">Start a Project</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+      </button>
+    </div>
+  </nav>
+</header>
 
-  <h1>Vikash Tiwari</h1>
+<main id="main">
 
-  <p>Software Architect | PHP Expert | ERP & CRM Specialist | Consultant</p>
+<!-- =========================================================
+     2. HERO
+     ========================================================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-eyebrow">Based in India · Working with businesses worldwide</p>
+      <h1>PHP Developer &amp; Business Software Specialist</h1>
+      <p class="hero-sub">Helping businesses build, customize and maintain PHP-based websites, ERP systems and business applications.</p>
 
-  <div class="badge">10+ Years Experience</div>
+      <div class="hero-facts">
+        <span class="hero-fact">10+ years, PHP &amp; MySQL</span>
+        <span class="hero-fact">CodeIgniter &amp; custom PHP</span>
+        <span class="hero-fact">cPanel / shared hosting experience</span>
+        <span class="hero-fact">Works solo, or with a design partner</span>
+      </div>
 
-  <br>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start a Project</a>
+        <a href="#" class="btn btn-whatsapp" data-whatsapp><i class="fa-brands fa-whatsapp"></i> WhatsApp Me</a>
+        <a href="#work" class="link-quiet">View My Work</a>
+      </div>
+    </div>
 
-  <a class="btn" href="https://wa.me/917550690731">Hire Me / WhatsApp</a>
-</div>
+    <div class="hero-panel" aria-hidden="true">
+      <div class="hero-panel-top">
+        <span class="hero-panel-title">business_systems.log</span>
+        <div class="hero-panel-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-panel-row"><span>Inventory</span><span>module</span></div>
+      <div class="hero-panel-row"><span>Sales &amp; Purchase</span><span>module</span></div>
+      <div class="hero-panel-row"><span>Accounts</span><span>module</span></div>
+      <div class="hero-panel-row"><span>HR &amp; Payroll</span><span>module</span></div>
+      <div class="hero-panel-row"><span>Reports</span><span>module</span></div>
+      <div class="hero-panel-row"><span>Payment Gateway</span><span>API</span></div>
+    </div>
+  </div>
+</section>
 
-<!-- ABOUT -->
-<div class="section">
-  <h2>About Me</h2>
-  <p>
-    I design and build scalable enterprise systems including ERP, CRM, ecommerce platforms and custom business solutions.
-    My focus is on performance, automation, and real business impact rather than just coding.
-  </p>
-</div>
+<!-- =========================================================
+     3. TRUST / EXPERIENCE
+     ========================================================= -->
+<section class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><strong>10+ years</strong>Working across PHP, MySQL and Bootstrap-based systems</div>
+    <div class="trust-item"><strong>PHP &amp; CodeIgniter</strong>Custom builds and framework-based projects, as the job needs</div>
+    <div class="trust-item"><strong>cPanel / shared hosting</strong>Comfortable deploying and troubleshooting on typical Indian SMB hosting</div>
+    <div class="trust-item"><strong>Solo + partner</strong>Work independently, or with a graphics/UI designer for full-scope projects</div>
+  </div>
+</section>
 
-<!-- SERVICES -->
-<div class="section">
-<h2>What I Do</h2>
-<div class="grid">
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <img class="about-photo" src="assets/img/vikash-tiwari.png" alt="Vikash Tiwari, PHP developer and ERP software specialist" width="220" height="220" loading="lazy">
+    <div>
+      <span class="section-label">About</span>
+      <h2>PHP developer &amp; backend/MySQL developer</h2>
+      <p>I'm a freelance PHP developer with 10+ years of practical experience across PHP, MySQL, CodeIgniter, Bootstrap and API/database-driven systems. Most of my work is ERP and business-application customization, CRM tools, ecommerce systems and business websites — built around how a company actually operates, not a one-size-fits-all template.</p>
+      <p>I work on my own for backend-focused projects, and alongside a graphics/UI designer when a project needs stronger visual design work.</p>
+    </div>
+  </div>
+</section>
 
-<div class="card">✔ ERP Development (Full Automation Systems)</div>
-<div class="card">✔ CRM Platforms (Sales & Leads Management)</div>
-<div class="card">✔ Ecommerce Systems</div>
-<div class="card">✔ API & Backend Architecture</div>
-<div class="card">✔ Custom Software Solutions</div>
-<div class="card">✔ Business System Consulting</div>
+<!-- =========================================================
+     4. SERVICES
+     ========================================================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">Services</span>
+      <h2>What I build and maintain</h2>
+      <p>Practical, business-focused PHP development — from new applications to fixing what already exists.</p>
+    </div>
 
-</div>
-</div>
+    <div class="service-list">
+      <div class="service-row">
+        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+        <div>
+          <h3>PHP &amp; MySQL Development</h3>
+          <p>Custom PHP applications, database-driven systems, admin panels and business applications.</p>
+        </div>
+      </div>
 
-<!-- SKILLS -->
-<div class="section">
-<h2>Tech Stack</h2>
-<div class="skills">
-<span>PHP</span>
-<span>CodeIgniter</span>
-<span>MySQL</span>
-<span>JavaScript</span>
-<span>Bootstrap</span>
-<span>HTML5</span>
-<span>CSS3</span>
-<span>Android</span>
-</div>
-</div>
+      <div class="service-row">
+        <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <div>
+          <h3>ERP Customization</h3>
+          <p>Customize existing ERP workflows, reports, inventory, sales, purchase, accounts and production processes.</p>
+        </div>
+      </div>
 
-<!-- PROJECTS -->
-<div class="section">
-<h2>Projects</h2>
-<div class="grid">
+      <div class="service-row">
+        <div class="service-icon"><i class="fa-solid fa-window-maximize"></i></div>
+        <div>
+          <h3>Business Website Development</h3>
+          <p>Responsive Bootstrap websites for companies, institutes, professionals and local businesses.</p>
+        </div>
+      </div>
 
-<div class="card">
-<strong>ERP System</strong>
-<p>Complete business automation system for inventory, HR, billing & reporting.</p>
-</div>
+      <div class="service-row">
+        <div class="service-icon"><i class="fa-solid fa-bug"></i></div>
+        <div>
+          <h3>PHP Bug Fixing &amp; Maintenance</h3>
+          <p>Fix errors, database issues, broken functionality, hosting issues and ongoing maintenance.</p>
+        </div>
+      </div>
 
-<div class="card">
-<strong>Ecommerce Platform</strong>
-<p>Scalable online store with payment integration & admin control.</p>
-</div>
+      <div class="service-row">
+        <div class="service-icon"><i class="fa-solid fa-plug"></i></div>
+        <div>
+          <h3>API &amp; Payment Integration</h3>
+          <p>Integrate APIs, payment gateways, third-party services and business automation workflows.</p>
+        </div>
+      </div>
 
-<div class="card">
-<strong>CRM Software</strong>
-<p>Lead tracking, sales pipeline & customer management system.</p>
-</div>
+      <div class="service-row">
+        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+        <div>
+          <h3>Custom Business Software</h3>
+          <p>Software built around how your business actually works, instead of forcing you into a generic system.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</div>
-</div>
+<!-- =========================================================
+     5. QUICK FIX BAND
+     ========================================================= -->
+<section>
+  <div class="wrap">
+    <div class="quickfix">
+      <div>
+        <h2>Already have a PHP website or software?</h2>
+        <p>Don't rebuild everything from scratch. I can help diagnose existing PHP/MySQL applications, fix bugs, modify features and improve business workflows.</p>
+      </div>
+      <a href="#contact" class="btn btn-whatsapp">Discuss My Existing Software</a>
+    </div>
+  </div>
+</section>
 
-<!-- CTA -->
-<div class="cta">
-  <h2>Let’s Build Something Powerful</h2>
-  <p>Available for Freelance, Consulting & Training</p>
-  <a href="https://wa.me/917550690731">Start Conversation</a>
-</div>
+<!-- =========================================================
+     ERP-focused section
+     ========================================================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">ERP &amp; business software</span>
+      <h2>Business software &amp; ERP solutions</h2>
+      <p>I work on business-specific workflows and customizations, not one-size-fits-all templates. Typical modules I work with:</p>
+    </div>
+    <div class="erp-modules">
+      <span class="erp-tag">Accounts</span>
+      <span class="erp-tag">Inventory</span>
+      <span class="erp-tag">Sales</span>
+      <span class="erp-tag">Purchase</span>
+      <span class="erp-tag">HR</span>
+      <span class="erp-tag">Payroll</span>
+      <span class="erp-tag">Production</span>
+      <span class="erp-tag">Reports</span>
+      <span class="erp-tag">Business workflow customization</span>
+    </div>
+  </div>
+</section>
 
-<!-- CONTACT -->
-<div class="section">
-<h2>Contact</h2>
-<p>
-📞 +91 7550690731 <br>
-📧 vikashtiwari060@gmail.com <br>
-🔗 LinkedIn Profile Available
-</p>
-</div>
+<!-- =========================================================
+     6. INDUSTRIES
+     ========================================================= -->
+<section id="industries">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">Who I work with</span>
+      <h2>Industries &amp; business types</h2>
+      <p>Most of my work comes from businesses that need practical software, not a tech showcase.</p>
+    </div>
+    <div class="industry-grid">
+      <div class="industry-item"><i class="fa-solid fa-shop"></i>Small &amp; medium businesses</div>
+      <div class="industry-item"><i class="fa-solid fa-industry"></i>Manufacturing companies</div>
+      <div class="industry-item"><i class="fa-solid fa-graduation-cap"></i>Coaching &amp; education institutes</div>
+      <div class="industry-item"><i class="fa-solid fa-store"></i>Local businesses</div>
+      <div class="industry-item"><i class="fa-solid fa-clock-rotate-left"></i>Businesses with legacy PHP software</div>
+      <div class="industry-item"><i class="fa-solid fa-diagram-project"></i>Businesses needing ERP customization</div>
+      <div class="industry-item"><i class="fa-solid fa-palette"></i>Web design &amp; digital marketing agencies</div>
+      <div class="industry-item"><i class="fa-solid fa-user-gear"></i>Freelancers needing backend support</div>
+    </div>
+  </div>
+</section>
 
-<div class="footer">
-© 2026 Vikash Tiwari | Built with modern web architecture mindset
-</div>
+<!-- =========================================================
+     7. SELECTED PROJECTS / CASE STUDIES
+     ========================================================= -->
+<section id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">Selected work</span>
+      <h2>Representative projects</h2>
+      <p>A sample of the type of systems I build. Details below are generalized to protect client confidentiality — ask me for specifics relevant to your industry.</p>
+    </div>
 
-</div>
+    <div class="project-grid">
 
+      <article class="project-card">
+        <!-- ADD REAL PROJECT SCREENSHOT HERE -->
+        <div class="project-shot">Screenshot to be added</div>
+        <div class="project-body">
+          <span class="project-industry">Business automation</span>
+          <h3>ERP System</h3>
+          <p>A business tracking inventory, purchase and sales manually needed a single system to reduce duplicate data entry and delayed reporting.</p>
+          <span class="project-tech">PHP · MySQL · CodeIgniter · Bootstrap</span>
+        </div>
+        <details class="project-details">
+          <summary>View details</summary>
+          <div class="project-details-body">
+            <p><strong>Solution:</strong> Built a custom PHP/MySQL ERP module covering inventory, purchase, sales, accounts and reporting, matching how the business actually operates.</p>
+            <p><strong>Key functionality:</strong></p>
+            <ul>
+              <li>Inventory tracking with stock movement</li>
+              <li>Purchase &amp; sales entry workflows</li>
+              <li>Automated business reports</li>
+              <li>Role-based access for staff</li>
+            </ul>
+            <!-- ADD REAL CLIENT / INDUSTRY CONTEXT HERE -->
+          </div>
+        </details>
+      </article>
+
+      <article class="project-card">
+        <!-- ADD REAL PROJECT SCREENSHOT HERE -->
+        <div class="project-shot">Screenshot to be added</div>
+        <div class="project-body">
+          <span class="project-industry">Sales &amp; lead management</span>
+          <h3>CRM Software</h3>
+          <p>A sales team was tracking leads in spreadsheets with no visibility into follow-ups or conversion status.</p>
+          <span class="project-tech">PHP · MySQL · JavaScript · Bootstrap</span>
+        </div>
+        <details class="project-details">
+          <summary>View details</summary>
+          <div class="project-details-body">
+            <p><strong>Solution:</strong> Developed a CRM platform for lead capture, pipeline tracking and follow-up reminders, giving the team one place to manage prospects.</p>
+            <p><strong>Key functionality:</strong></p>
+            <ul>
+              <li>Lead pipeline with status tracking</li>
+              <li>Follow-up scheduling</li>
+              <li>User roles for sales staff</li>
+            </ul>
+            <!-- ADD REAL CLIENT / INDUSTRY CONTEXT HERE -->
+          </div>
+        </details>
+      </article>
+
+      <article class="project-card">
+        <!-- ADD REAL PROJECT SCREENSHOT HERE -->
+        <div class="project-shot">Screenshot to be added</div>
+        <div class="project-body">
+          <span class="project-industry">Ecommerce</span>
+          <h3>Ecommerce Platform</h3>
+          <p>A retail business needed to sell online with a manageable admin panel and working payment collection.</p>
+          <span class="project-tech">PHP · MySQL · Payment Gateway API · Bootstrap</span>
+        </div>
+        <details class="project-details">
+          <summary>View details</summary>
+          <div class="project-details-body">
+            <p><strong>Solution:</strong> Built a PHP/MySQL ecommerce system with product and order management, plus an integrated payment gateway for checkout.</p>
+            <p><strong>Key functionality:</strong></p>
+            <ul>
+              <li>Product catalog &amp; cart</li>
+              <li>Order management for admin</li>
+              <li>Payment gateway integration</li>
+            </ul>
+            <!-- ADD REAL CLIENT / INDUSTRY CONTEXT HERE -->
+          </div>
+        </details>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     8. WHY WORK WITH ME
+     ========================================================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">Why work with me</span>
+      <h2>What you actually get</h2>
+    </div>
+    <div class="why-list">
+      <div class="why-item"><i class="fa-solid fa-check"></i><p>I can read and understand existing PHP code, not just write new code</p></div>
+      <div class="why-item"><i class="fa-solid fa-check"></i><p>Business-workflow focused — I ask how you work before I start coding</p></div>
+      <div class="why-item"><i class="fa-solid fa-check"></i><p>10+ years of hands-on PHP, MySQL and CodeIgniter experience</p></div>
+      <div class="why-item"><i class="fa-solid fa-check"></i><p>Comfortable with custom development, not just off-the-shelf systems</p></div>
+      <div class="why-item"><i class="fa-solid fa-check"></i><p>Ongoing maintenance and troubleshooting, not just one-time delivery</p></div>
+      <div class="why-item"><i class="fa-solid fa-check"></i><p>Direct communication — you talk to the person doing the work</p></div>
+      <div class="why-item"><i class="fa-solid fa-check"></i><p>Suitable for agency collaboration and white-label development</p></div>
+      <div class="why-item"><i class="fa-solid fa-check"></i><p>Familiar with typical Indian shared hosting / cPanel environments</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     9. AGENCY PARTNERSHIP
+     ========================================================= -->
+<section id="partnership">
+  <div class="wrap">
+    <div class="agency">
+      <div class="agency-grid">
+        <div>
+          <span class="section-label">Development partner for agencies</span>
+          <h2>Have the client? We can handle the development.</h2>
+          <p>If you are a web design, digital marketing or creative agency and need reliable technical development support, we can work with your team on a project or white-label basis.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:10px;">Discuss Partnership</a>
+        </div>
+        <div>
+          <ul class="agency-services">
+            <li>PHP development</li>
+            <li>Bootstrap websites</li>
+            <li>Backend development</li>
+            <li>ERP customization</li>
+            <li>API integration</li>
+            <li>Existing software maintenance</li>
+            <li>Bug fixing</li>
+            <li>UI support via design partner</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     10. PROCESS
+     ========================================================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">How we'd work together</span>
+      <h2>Development process</h2>
+    </div>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="process-num">1</div>
+        <h3>Discuss requirements</h3>
+        <p>Understand what you need, on a call or over WhatsApp/email.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">2</div>
+        <h3>Understand existing system / business process</h3>
+        <p>Review your current software or workflow before proposing anything.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">3</div>
+        <h3>Suggest solution</h3>
+        <p>A clear, practical approach and scope — no unnecessary complexity.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">4</div>
+        <h3>Development</h3>
+        <p>Build in stages, with progress visible along the way.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">5</div>
+        <h3>Testing</h3>
+        <p>Check functionality and edge cases before handover.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">6</div>
+        <h3>Deployment &amp; support</h3>
+        <p>Go live, and stay available for fixes and follow-up work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PRICING (kept as a quiet "quick services" section)
+     ========================================================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">Quick services</span>
+      <h2>Starting from</h2>
+    </div>
+    <div class="pricing-table">
+      <div class="pricing-row"><span class="name">PHP Bug Fixing</span><span class="amount">From ₹1,500</span></div>
+      <div class="pricing-row"><span class="name">Business Website</span><span class="amount">From ₹7,500</span></div>
+      <div class="pricing-row"><span class="name">PHP Customization</span><span class="amount">From ₹3,000</span></div>
+      <div class="pricing-row"><span class="name">ERP Customization</span><span class="amount">Custom quote</span></div>
+    </div>
+    <p class="pricing-note">Final pricing depends on scope and requirements. Send the details on the contact form below for an accurate quote.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     11. CLIENT EXPERIENCE (honest placeholder — no fabricated testimonials)
+     ========================================================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">Client experience</span>
+      <h2>Testimonials</h2>
+    </div>
+    <div class="experience-note">
+      <!-- ADD REAL CLIENT TESTIMONIAL HERE -->
+      Client testimonials will be added here as projects are completed and clients agree to share feedback publicly.
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     12. FAQ
+     ========================================================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-label">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+
+    <details class="faq-item" open>
+      <summary>Do you work with businesses that already have an existing PHP website or system?</summary>
+      <p>Yes — this is a large part of what I do. I can review existing PHP/MySQL code, diagnose issues and modify or extend functionality rather than rebuilding from zero.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can you customize our existing ERP instead of building a new one?</summary>
+      <p>In most cases, yes. I'll first look at how your current system works before recommending whether customization or a new module makes more sense.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do you work directly with businesses, or only through agencies?</summary>
+      <p>Both. I take on direct client projects, and I also work as a development partner behind agencies on a project or white-label basis.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What if I don't know the exact scope of my project yet?</summary>
+      <p>That's normal. Share what you're trying to achieve and I'll help scope it out during the requirements discussion, before any coding starts.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do you offer ongoing maintenance and support?</summary>
+      <p>Yes, for both projects I've built and existing PHP/MySQL systems I'm brought in to maintain.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can you work with my existing hosting (cPanel / shared hosting)?</summary>
+      <p>Yes, I regularly deploy and troubleshoot on standard shared hosting and cPanel environments common with Indian businesses.</p>
+    </details>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     13. CONTACT / ENQUIRY
+     ========================================================= -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <span class="section-label">Get in touch</span>
+      <h2>Need a PHP fix, an ERP update, or a new business website?</h2>
+      <p>Tell me a bit about the project and I'll get back to you — usually fastest over WhatsApp.</p>
+
+      <div class="contact-channels">
+        <div class="contact-channel">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div><div class="label">WHATSAPP</div><a class="value" href="#" data-whatsapp>+91 75506 90731</a></div>
+        </div>
+        <div class="contact-channel">
+          <i class="fa-solid fa-envelope"></i>
+          <div><div class="label">EMAIL</div><a class="value" href="mailto:vikashtiwari060@gmail.com">vikashtiwari060@gmail.com</a></div>
+        </div>
+        <div class="contact-channel">
+          <i class="fa-brands fa-github"></i>
+          <div><div class="label">GITHUB</div><a class="value" href="https://github.com/VikashTiwari060" target="_blank" rel="noopener">github.com/VikashTiwari060</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-panel">
+      <form id="enquiry-form" novalidate>
+        <div class="form-row">
+          <label for="f-name">Name <span class="req">*</span></label>
+          <input class="form-control" type="text" id="f-name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="form-two">
+          <div class="form-row">
+            <label for="f-company">Company / Business</label>
+            <input class="form-control" type="text" id="f-company" name="company" autocomplete="organization">
+          </div>
+          <div class="form-row">
+            <label for="f-email">Email</label>
+            <input class="form-control" type="email" id="f-email" name="email" autocomplete="email">
+          </div>
+        </div>
+
+        <div class="form-two">
+          <div class="form-row">
+            <label for="f-whatsapp">WhatsApp Number <span class="req">*</span></label>
+            <input class="form-control" type="tel" id="f-whatsapp" name="whatsapp" required autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <label for="f-budget">Budget Range</label>
+            <select class="form-control" id="f-budget" name="budget">
+              <option value="">Select a range</option>
+              <option>Under ₹5,000</option>
+              <option>₹5,000–₹10,000</option>
+              <option>₹10,000–₹25,000</option>
+              <option>₹25,000+</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="f-service">Service Required <span class="req">*</span></label>
+          <select class="form-control" id="f-service" name="service" required>
+            <option value="">Select a service</option>
+            <option>PHP &amp; MySQL Development</option>
+            <option>ERP Customization</option>
+            <option>Business Website Development</option>
+            <option>PHP Bug Fixing &amp; Maintenance</option>
+            <option>API / Payment Integration</option>
+            <option>Custom Business Software</option>
+            <option>Agency Partnership</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="f-details">Project Details <span class="req">*</span></label>
+          <textarea class="form-control" id="f-details" name="details" required placeholder="Tell me about your project or existing system..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Enquiry via WhatsApp</button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Vikash Tiwari</div>
+        <p style="color:#B9C2D6; max-width:36ch;">PHP developer and business software specialist, working with businesses and agencies on PHP, MySQL and ERP projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>SITE</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#partnership">Agencies</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <ul>
+          <li><a href="#" data-whatsapp>WhatsApp</a></li>
+          <li><a href="mailto:vikashtiwari060@gmail.com">Email</a></li>
+          <li><a href="https://github.com/VikashTiwari060" target="_blank" rel="noopener">GitHub</a></li>
+          <!-- ADD LINKEDIN URL HERE IF AVAILABLE -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Vikash Tiwari</span>
+      <span>PHP Development · ERP Customization · Business Software</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="wa-float" data-whatsapp aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
