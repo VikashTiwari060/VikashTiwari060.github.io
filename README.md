@@ -46,6 +46,24 @@ To route it to email/inbox instead, see the comment block above
 `handleFormSubmit` in `script.js` — swap in a Formspree endpoint or EmailJS
 call there.
 
+## Revision notes (2nd pass)
+
+Refinements made after the first draft, per the more detailed brief:
+
+- Nav simplified to: Home, Services, Projects, ERP, Agency Partnership, About, Contact
+- Hero subheadline and a "10+ Years of Practical Development Experience" trust line updated to match the brief exactly
+- Quick-fix band now lists the specific issue types (bug fixing, DB issues, reports, API integration, etc.)
+- Each service card now has a "Discuss this service" link
+- ERP section heading changed to "Business software that fits your workflow"
+- Project screenshot placeholders redesigned as browser-frame mockups (not real screenshots — still placeholders)
+- Project "view details" panels now show a visible "details coming soon" line instead of only an HTML comment
+- Agency section adds the explicit line: "Your team handles the client relationship. I provide the technical development support behind it."
+- Pricing split into two dedicated sections: a Quick PHP Fix section (₹1,500 / ₹2,000 / ₹3,000 tiers) and a Business Website package (from ₹7,500, with inclusions list)
+- "Why work with me" rewritten to match the exact 9 reasons from the brief, including ERP experience
+- Contact form service dropdown updated to the exact option list requested
+- Added a proper favicon (inline SVG monogram)
+- Removed the unused Bootstrap CSS import (~160KB) since no Bootstrap classes were actually used anywhere in the markup — the custom stylesheet is the full design system. This cuts page weight noticeably without changing anything visually.
+
 ## WhatsApp number
 
 Every WhatsApp link and button on the site reads from one place:

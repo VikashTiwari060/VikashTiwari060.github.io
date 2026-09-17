@@ -274,6 +274,13 @@ section{ padding:88px 0; }
   color:var(--text-soft);
 }
 
+.hero-trust{
+  font-family:var(--font-mono);
+  font-size:13px;
+  color:var(--sage);
+  margin:14px 0 0;
+}
+
 .hero-facts{
   display:flex;
   flex-wrap:wrap;
@@ -431,10 +438,20 @@ section{ padding:88px 0; }
   display:grid;
   grid-template-columns:1fr auto;
   gap:30px;
-  align-items:center;
+  align-items:start;
 }
+.quickfix > a.btn{ margin-top:6px; }
 .quickfix h2{ color:var(--white); font-size:26px; max-width:18ch; }
-.quickfix p{ color:#C7CEDE; margin-bottom:0; max-width:52ch; }
+.quickfix p{ color:#C7CEDE; margin-bottom:16px; max-width:52ch; }
+.quickfix-tags{ display:flex; flex-wrap:wrap; gap:8px; }
+.quickfix-tags span{
+  font-family:var(--font-mono);
+  font-size:12px;
+  color:#D9DFEC;
+  border:1px solid var(--rule-dark);
+  padding:6px 11px;
+  border-radius:16px;
+}
 @media (max-width:760px){
   .quickfix{ grid-template-columns:1fr; padding:34px 24px; }
 }
@@ -499,10 +516,37 @@ section{ padding:88px 0; }
   flex-direction:column;
 }
 .project-shot{
-  aspect-ratio:16/10;
-  background:
-    repeating-linear-gradient(45deg, var(--paper-2), var(--paper-2) 10px, var(--paper) 10px, var(--paper) 20px);
   border-bottom:1px solid var(--rule);
+  background:var(--paper-2);
+}
+.browser-frame{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+.browser-bar{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:9px 12px;
+  background:var(--panel);
+  border-bottom:1px solid var(--rule);
+}
+.browser-bar .dot{ width:8px; height:8px; border-radius:50%; background:var(--rule); }
+.browser-bar .url{
+  margin-left:8px;
+  font-family:var(--font-mono);
+  font-size:11px;
+  color:var(--steel);
+  background:var(--paper);
+  border:1px solid var(--rule);
+  border-radius:10px;
+  padding:3px 10px;
+  flex:1;
+}
+.browser-body{
+  flex:1;
+  aspect-ratio:16/9;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -511,6 +555,8 @@ section{ padding:88px 0; }
   font-size:12px;
   text-align:center;
   padding:16px;
+  background:
+    repeating-linear-gradient(45deg, var(--paper-2), var(--paper-2) 10px, var(--paper) 10px, var(--paper) 20px);
 }
 .project-body{ padding:22px 22px 8px; flex:1; display:flex; flex-direction:column; }
 .project-industry{
@@ -582,6 +628,14 @@ section{ padding:88px 0; }
   align-items:start;
 }
 .agency h2{ font-size:28px; }
+.agency-callout{
+  font-family:var(--font-head);
+  font-size:16px;
+  color:var(--ink);
+  border-left:2px solid var(--brass);
+  padding-left:14px;
+  margin:18px 0;
+}
 .agency-services{
   list-style:none;
   margin:18px 0 0;
